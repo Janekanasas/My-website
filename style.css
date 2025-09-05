@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F9FF;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  line-height: 130%;
+  color: #2D2D2D;
+}
+
+a  {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-feature-settings: 'liga' off;
+  text-decoration: none;
+}
+.navbar {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 0.6rem;
+}
+
+.nav__right {
+  display: none;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+ font-size: 2.1rem;
+ font-weight: 700;
+}
+
+.higlight {
+  font-weight: 400;
+}
+
+.button {
+  font-feature-settings: 'liga' off;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 600;
+  padding: 16px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button--primary {
+  color: white;
+  background: #009379;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.button--secondary {
+  background: #E5F4F2;
+  color: #009379;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 780px) {
+  .nav__right {
+    display: flex;
+  }
+
+  .contact, .nav__right .button--primary {
+    display: none;
+  }
+
+  .nav__right .button--secondary { /* How it works */
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 2rem 3rem;
+  }
+
+  nav, section {
+    margin: 0 1.8rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .contact, .nav__right .button--primary {
+    display: block;
+  }
+
+  .navbar {
+    max-width: 117rem;
+    margin: 0 auto;
+  }
+
+  .contact {
+    color: #009379;
+  }
+  
+  .nav__buttons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav__right {
+    align-items: center;
+    gap: 5rem;
+  }
+
+
+}
